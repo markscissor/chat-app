@@ -1,0 +1,69 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.loginbody {
+    background-image: url("../images/background.jpg");
+    height: 100%;
+    background-size: cover;
+}
+
+.banner {
+    background-image: url("../images/banner.jpg");
+    height: 100%;
+    background-size: cover;
+}
+
+.logo {
+    // background-image: url("../images/logo.jpg");
+    // height: 100%;
+    // background-size: cover;
+    img {
+        max-height: 10vh;
+    }
+}
+
+// .navbar {
+//     background-color: black !important;
+// }
+
+.message-entry {
+    position: relative;
+    margin: 10px;
+    width: auto;
+
+    > span {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+    }
+}
+
+#friends {
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    li::before {
+        content: "";
+        background-color: green;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    li.offline::before {
+        background-color:red;
+    }
+}
